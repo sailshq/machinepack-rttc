@@ -29,7 +29,8 @@
       "infer",
       "compile",
       "coerce",
-      "sample"
+      "sample",
+      "get-display-type"
     ],
     "testsUrl": "https://travis-ci.org/treelinehq/machinepack-rttc"
   },

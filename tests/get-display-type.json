@@ -1,0 +1,65 @@
+{
+  "machine": "get-display-type",
+  "expectations": [
+    {
+      "using": {
+        "value": {
+          "foo": "bar"
+        }
+      },
+      "outcome": "success",
+      "returns": "dictionary"
+    },
+    {
+      "using": {
+        "value": [
+          {
+            "foo": "bar"
+          }
+        ]
+      },
+      "outcome": "success",
+      "returns": "array"
+    },
+    {
+      "using": {
+        "value": 4
+      },
+      "outcome": "success",
+      "returns": "number"
+    },
+    {
+      "using": {
+        "value": "stuff"
+      },
+      "outcome": "success",
+      "returns": "string"
+    },
+    {
+      "using": {
+        "value": true
+      },
+      "outcome": "success",
+      "returns": "boolean"
+    },
+    {
+      "using": {},
+      "outcome": "success",
+      "returns": "undefined"
+    },
+    {
+      "using": {
+        "value": "*"
+      },
+      "outcome": "success",
+      "returns": "string"
+    },
+    {
+      "using": {
+        "value": "==="
+      },
+      "outcome": "success",
+      "returns": "string"
+    }
+  ]
+}
