@@ -10,7 +10,7 @@
     "machines",
     "machinepack"
   ],
-  "author": "",
+  "author": "The Treeline Company",
   "license": "MIT",
   "dependencies": {
     "lodash": "^3.9.3",
@@ -18,7 +18,7 @@
     "rttc": "^4.5.2"
   },
   "devDependencies": {
-    "test-machinepack-mocha": "^2.0.0"
+    "test-machinepack-mocha": "^0.2.2"
   },
   "machinepack": {
     "friendlyName": "Rttc",
@@ -30,6 +30,11 @@
       "compile",
       "coerce",
       "sample"
-    ]
+    ],
+    "testsUrl": "https://travis-ci.org/treelinehq/machinepack-rttc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:treelinehq/machinepack-rttc.git"
   }
 }
