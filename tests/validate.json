@@ -1,0 +1,120 @@
+{
+  "machine": "validate",
+  "expectations": [
+    {
+      "using": {
+        "value": true,
+        "typeSchema": "boolean"
+      },
+      "outcome": "success",
+      "returns": true
+    },
+    {
+      "using": {
+        "value": false,
+        "typeSchema": "boolean"
+      },
+      "outcome": "success",
+      "returns": false
+    },
+    {
+      "using": {
+        "value": true,
+        "typeSchema": "number"
+      },
+      "outcome": "success",
+      "returns": 1
+    },
+    {
+      "using": {
+        "value": false,
+        "typeSchema": "number"
+      },
+      "outcome": "success",
+      "returns": 0
+    },
+    {
+      "using": {
+        "value": {
+          "foo": 3
+        },
+        "typeSchema": {
+          "foo": "string"
+        }
+      },
+      "outcome": "success",
+      "returns": {
+        "foo": "3"
+      }
+    },
+    {
+      "using": {
+        "value": {
+          "foo": 3
+        },
+        "typeSchema": {
+          "foo": "number"
+        }
+      },
+      "outcome": "success",
+      "returns": {
+        "foo": 3
+      }
+    },
+    {
+      "using": {
+        "value": [
+          {
+            "foo": 3
+          },
+          {
+            "foo": 29
+          },
+          {
+            "foo": "-42.2"
+          }
+        ],
+        "typeSchema": [
+          {
+            "foo": "number"
+          }
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        {
+          "foo": 3
+        },
+        {
+          "foo": 29
+        },
+        {
+          "foo": -42.2
+        }
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          {
+            "foo": 3
+          },
+          {
+            "foo": 29
+          },
+          {
+            "foo": {}
+          }
+        ],
+        "typeSchema": [
+          {
+            "foo": {
+              "bar": "number"
+            }
+          }
+        ]
+      },
+      "outcome": "invalid"
+    }
+  ]
+}

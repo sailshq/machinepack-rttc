@@ -1,0 +1,241 @@
+{
+  "machine": "coerce",
+  "expectations": [
+    {
+      "using": {
+        "value": [
+          "foo"
+        ],
+        "typeSchema": []
+      },
+      "outcome": "success",
+      "returns": [
+        "foo"
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          4
+        ],
+        "typeSchema": []
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        4
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": []
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        {},
+        true,
+        -2395,
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": "json"
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        {},
+        true,
+        -2395,
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": "ref"
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        {},
+        true,
+        -2395,
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": [
+          "ref"
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        {},
+        true,
+        -2395,
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": [
+          "json"
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        "foo",
+        {},
+        true,
+        -2395,
+        [
+          []
+        ]
+      ]
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": "number"
+      },
+      "outcome": "success",
+      "returns": 0
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": "string"
+      },
+      "outcome": "success",
+      "returns": ""
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": "boolean"
+      },
+      "outcome": "success",
+      "returns": false
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": {}
+      },
+      "outcome": "success",
+      "returns": {}
+    },
+    {
+      "using": {
+        "value": [
+          "foo",
+          {},
+          true,
+          -2395,
+          [
+            []
+          ]
+        ],
+        "typeSchema": {
+          "stuff": [
+            "things"
+          ]
+        }
+      },
+      "outcome": "success",
+      "returns": {
+        "stuff": []
+      }
+    }
+  ]
+}

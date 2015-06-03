@@ -1,0 +1,35 @@
+{
+  "name": "machinepack-rttc",
+  "version": "0.1.0",
+  "description": "Utilities for strongly-typed data.  Exposes machines that wrap the methods exposed by 'rttc'.",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "Rttc",
+    "machines",
+    "machinepack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "machine": "^9.0.0",
+    "rttc": "^4.5.2"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^2.0.0"
+  },
+  "machinepack": {
+    "friendlyName": "Rttc",
+    "machineDir": "machines/",
+    "machines": [
+      "validate",
+      "validate-strict",
+      "infer",
+      "compile",
+      "coerce",
+      "sample"
+    ]
+  }
+}

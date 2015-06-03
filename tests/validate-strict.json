@@ -1,0 +1,51 @@
+{
+  "machine": "validate-strict",
+  "expectations": [
+    {
+      "using": {
+        "value": [
+          {
+            "foo": {
+              "bar": 3
+            }
+          }
+        ],
+        "typeSchema": [
+          {
+            "foo": {
+              "bar": "number"
+            }
+          }
+        ]
+      },
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "value": [
+          {
+            "foo": {
+              "bar": "3"
+            }
+          }
+        ],
+        "typeSchema": [
+          {
+            "foo": {
+              "bar": "number"
+            }
+          }
+        ]
+      },
+      "outcome": "invalid",
+      "returns": [
+        {
+          "code": "E_INVALID_TYPE",
+          "keypath": "foo.bar",
+          "expected": "'number'",
+          "actual": "'3'"
+        }
+      ]
+    }
+  ]
+}

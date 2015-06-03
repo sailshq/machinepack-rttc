@@ -1,0 +1,23 @@
+{
+  "machine": "compile",
+  "expectations": [
+    {
+      "using": {
+        "value": "foo"
+      },
+      "outcome": "success",
+      "returns": "'foo'"
+    },
+    {
+      "using": {
+        "value": {
+          "foo": [
+            "bar"
+          ]
+        }
+      },
+      "outcome": "success",
+      "returns": "{ foo: [ 'bar' ] }"
+    }
+  ]
+}

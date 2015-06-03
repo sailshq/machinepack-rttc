@@ -1,0 +1,116 @@
+{
+  "machine": "infer",
+  "expectations": [
+    {
+      "using": {
+        "example": [
+          {
+            "foo": {
+              "bar": 3
+            }
+          }
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        {
+          "foo": {
+            "bar": "number"
+          }
+        }
+      ]
+    },
+    {
+      "using": {
+        "example": "*"
+      },
+      "outcome": "success",
+      "returns": "json"
+    },
+    {
+      "using": {
+        "example": "==="
+      },
+      "outcome": "success",
+      "returns": "ref"
+    },
+    {
+      "using": {
+        "example": "-->"
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": "==>"
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": "=>"
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": "<="
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": "<-"
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": "->"
+      },
+      "outcome": "success",
+      "returns": "lamda"
+    },
+    {
+      "using": {
+        "example": {}
+      },
+      "outcome": "success",
+      "returns": {}
+    },
+    {
+      "using": {
+        "example": []
+      },
+      "outcome": "success",
+      "returns": []
+    },
+    {
+      "using": {
+        "example": [
+          "foo"
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        "string"
+      ]
+    },
+    {
+      "using": {
+        "example": [
+          "==="
+        ]
+      },
+      "outcome": "success",
+      "returns": [
+        "ref"
+      ]
+    }
+  ]
+}
