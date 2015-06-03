@@ -1,6 +1,6 @@
 {
   "name": "machinepack-rttc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utilities for strongly-typed data.  Exposes machines that wrap the methods exposed by 'rttc'.",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
