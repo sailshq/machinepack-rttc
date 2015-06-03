@@ -8,7 +8,7 @@
 Utilities for strongly-typed data.  Exposes machines that wrap the methods exposed by 'rttc'.
 
 
-## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-rttc.svg)](http://badge.fury.io/js/machinepack-rttc) [![Build Status](https://travis-ci.org/mikermcneil/machinepack-rttc.png?branch=master)](https://travis-ci.org/mikermcneil/machinepack-rttc)
+## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-rttc.svg)](http://badge.fury.io/js/machinepack-rttc) [![Build Status](https://travis-ci.org/treelinehq/machinepack-rttc.png?branch=master)](https://travis-ci.org/treelinehq/machinepack-rttc)
 
 ```sh
 $ npm install machinepack-rttc
